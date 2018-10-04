@@ -18,6 +18,6 @@ class Client extends Model
 
     public function contacts()
     {
-        return $this->belongsTo(Contact::class);
+        return $this->belongsToMany(Contact::class);
     }
 }
